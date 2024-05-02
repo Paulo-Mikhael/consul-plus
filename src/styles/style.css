@@ -1,0 +1,379 @@
+/*region*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+.content{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+p{
+    font-size: 15px;
+}
+h1{
+    font-size: 60px;    
+}
+h2{
+    font-size: 16px;
+    font-weight: 510;
+}
+img{
+    width: 40px;
+    height: 40px;
+}
+button, h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+#header-nav .selected{
+    color: var(--consul-blue) !important;
+}
+#services .selected{
+    border-bottom: 5px solid var(--consul-blue);
+}
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section p{
+    color: var(--consul-gray);
+    font-size: 20px;
+}
+section h3{
+    color: var(--consul-blue);
+}   
+section h2{
+    color: black;
+    font-size: 34px;
+    font-weight: bold;
+}
+.button-one{
+    background-color: var(--consul-blue);
+    border: none;
+    padding: 10px;
+    width: 200px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .3s;
+}
+.button-one:hover{
+    box-shadow: 0px 0px 10px gray;
+}
+.button-one:after{
+    color: var(--consul-blue);
+    transition: all .2s;
+    background-color: white;
+    content: 'Marcar consulta';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-one:hover:after{
+    bottom: 0;
+}
+
+/*endregion*/
+
+/*region*/
+
+header #header-one{
+    background-color: var(--consul-blue);
+    width: 100%;
+    height: 65px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+header #header-one .content #contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+}
+
+header #header-one .content #contact img{
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+header #header-one .content #contact p:nth-child(2){
+    margin-right: 15px;
+}
+header #header-one .content #contact p:nth-child(3){
+    font-weight: bold;
+    cursor: pointer;
+}
+header #header-two{
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header #header-two .content{
+    background-color: white;
+    width: 89%;
+    padding: 0px 10px;
+}
+header #header-two .content i, header #header-two .content h2{
+    color: var(--consul-gray);
+}
+header #header-two .content img{
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+}
+header #header-two .content #logo{
+    display: flex;
+    align-items: center;
+}
+header #header-two .content #logo a{
+    display: flex;
+    align-items: center;
+}
+header #header-two .content #logo p{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+header #header-two .content #header-nav{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+header #header-two .content #header-nav h2{
+    cursor: pointer;
+}
+header #header-two .content #header-nav h2 i{
+    transition: all .2s;
+}
+header #header-two .content #header-nav h2:nth-child(3):hover i{
+    transform: rotate(180deg);
+}
+
+/*endregion*/
+
+/*region*/
+
+main{
+    height: 87vh;
+    width: 100%;
+    background-image: url(../images/background.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: top center;
+}
+main .content{
+    align-items: end;
+    height: 100%;
+}
+main .content #main-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+}
+main .content #main-message h1{
+    width: 60%;
+}
+main .content #main-message img{
+    margin-bottom: 20px;
+}
+main .content #main-message button{
+    margin-top: 20px;
+}
+#form-header{
+    background-color: var(--consul-blue);
+    width: 32%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*endregion*/
+
+/*region*/
+
+#nav-sidebar{
+    background-color: var(--consul-blue);
+    position: fixed;
+    width: 4%;
+    top: 0;
+    right: 0;
+    margin-top: 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    height: 30vh;
+}
+#nav-sidebar h3{
+    cursor: pointer;
+}
+
+/*endregion*/
+
+/*region*/
+
+#main-screen-2 .content{
+    height: 100%;
+}
+#main-screen-2 .content #form-message{
+    width: 47%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+#main-screen-2 .content #form-message #form-message-numbers{
+    margin-top: 20px;
+    display: flex;
+}
+#main-screen-2 .content #form-message #form-message-numbers img{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+#separator{
+    background-color: var(--consul-gray);
+    height: 100%;
+    width: 2px;
+    margin: 0px 20px;
+}
+#main-screen-2 .content #form-content{
+    width: 32%;
+}
+#main-screen-2 .content #form-content .content{
+    background-color: white;
+    width: 100%;
+    height: 73%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: 0px 2px 20px rgb(104, 104, 104);
+}
+#main-screen-2 .content #form-content .content p{
+    width: 90%;
+    height: 30px;
+}
+#main-screen-2 .content #form-content .content i{
+    color: var(--consul-gray);
+}
+#main-screen-2 .content #form-content .content input, #main-screen-2 .content #form-content .content select{
+    width: 84%;
+    height: 30px;
+    background-color: white;
+    border: none;
+    padding: 5px 10px;
+    color: black;
+    border: 2px solid var(--consul-gray);
+    margin-bottom: 20px;
+}
+#main-screen-2 .content #form-content .content select{
+    padding: 0;
+}
+#main-screen-2 .content #form-content .content option{
+    color: black;
+}
+#main-screen-2 .content #form-content .content input:focus, #main-screen-2 .content #form-content .content select:focus{
+    outline: none;
+    border: 2px solid var(--consul-blue);
+}
+#main-screen-2 .content #form-content .content #form-button-container{
+    width: 83%;
+}
+
+/*endregion*/
+
+/*region*/
+
+#services .content{
+    align-items: center;
+    flex-direction: column;
+}
+#services .content #services-title a{
+    color: var(--consul-blue);
+}
+#services .content  #services-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#services .content  #services-cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+#services .content  #services-cards .card{
+    width: 170px;
+    height: 170px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.212);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+#services .content  #services-cards .card h3{
+    text-align: center;
+    color: black;
+}
+#services .content  #services-cards .card img{
+    width: 80px;
+    height: 80px;
+}
+#services-message-container{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--consul-blue);
+}
+#services-message-container h3, #services-message-container p{
+    color: white;
+}
+#services-message-container #services-message-image{
+    width: 60%;
+    height: 100%;
+}
+#services-message-container #services-message-content{
+    height: 85%;
+    padding: 10px;
+}
+#services-message-container #services-message-content h3, #services-message-container #services-message-content p{
+    margin-bottom: 10px;
+}
+#services-message-container #services-message-image img{
+    width: 100%;
+    height: 100%;
+}
+
+/*endregion*/
