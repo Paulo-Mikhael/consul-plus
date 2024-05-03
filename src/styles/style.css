@@ -7,11 +7,17 @@
     font-family: 'Inter', sans-serif;
     color: white;
 }
+html{
+    scroll-behavior: smooth;
+}
 .content{
     width: 90%;
     height: 90%;
     display: flex;
     justify-content: space-between;
+}
+b{
+    color: var(--consul-blue);
 }
 p{
     font-size: 15px;
@@ -31,7 +37,7 @@ button, h3{
     font-size: 20px;
     font-weight: bold;
 }
-#header-nav .selected{
+nav .selected{
     color: var(--consul-blue) !important;
 }
 #services .selected{
@@ -55,6 +61,20 @@ section h2{
     color: black;
     font-size: 34px;
     font-weight: bold;
+}
+.button-two{
+    background-color: transparent;
+    border: 4px solid white;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .3s;
+}
+.button-two:hover{
+    border: 4px solid var(--consul-blue);
+    color: var(--consul-blue);
+    background-color: white;
 }
 .button-one{
     background-color: var(--consul-blue);
@@ -85,6 +105,21 @@ section h2{
 }
 .button-one:hover:after{
     bottom: 0;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.logo p{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 5px;
 }
 
 /*endregion*/
@@ -138,33 +173,19 @@ header #header-two .content i, header #header-two .content h2{
 header #header-two .content img{
     width: 45px;
     height: 45px;
-    margin-right: 5px;
 }
-header #header-two .content #logo{
-    display: flex;
-    align-items: center;
-}
-header #header-two .content #logo a{
-    display: flex;
-    align-items: center;
-}
-header #header-two .content #logo p{
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-}
-header #header-two .content #header-nav{
+header #header-two .content nav{
     display: flex;
     align-items: center;
     gap: 15px;
 }
-header #header-two .content #header-nav h2{
+header #header-two .content nav h2{
     cursor: pointer;
 }
-header #header-two .content #header-nav h2 i{
+header #header-two .content nav h2 i{
     transition: all .2s;
 }
-header #header-two .content #header-nav h2:nth-child(3):hover i{
+header #header-two .content nav a:nth-child(3):hover i{
     transform: rotate(180deg);
 }
 
@@ -229,8 +250,8 @@ main .content #main-message button{
     gap: 20px;
     height: 30vh;
 }
-#nav-sidebar h3{
-    cursor: pointer;
+#nav-sidebar a{
+    text-decoration: none;
 }
 
 /*endregion*/
@@ -354,7 +375,7 @@ main .content #main-message button{
     height: 250px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     background-color: var(--consul-blue);
 }
 #services-message-container h3, #services-message-container p{
@@ -365,15 +386,264 @@ main .content #main-message button{
     height: 100%;
 }
 #services-message-container #services-message-content{
-    height: 85%;
-    padding: 10px;
+    height: 90%;
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
 }
 #services-message-container #services-message-content h3, #services-message-container #services-message-content p{
     margin-bottom: 10px;
+    width: 100%;
+}
+#services-message-container #services-message-content p{
+    font-size: 19.5px;
 }
 #services-message-container #services-message-image img{
     width: 100%;
     height: 100%;
+}
+
+/*endregion*/
+
+/*region*/
+
+#about-us .content{
+    flex-direction: column;
+    align-items: start;
+}
+#about-us .content #about-us-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#about-us .content #text-container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+#about-us .content #text-container #text-content{
+    width: 50%;
+}
+#about-us .content #text-container #text-images{
+    width: 45%;
+    height: 90%;
+}
+#about-us .content #text-container #text-images img{
+    width: 100%;
+    height: 100%;
+}
+#about-us .content #text-container h2{
+    font-size: 45px;
+}
+#about-us .content #text-container p{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+#about-us .content #text-container p:last-child{
+    margin-top: 0px;
+}
+#about-us .content #text-container i{
+    color: var(--consul-blue);
+    font-size: 25px;
+    margin-right: 10px;
+}
+#about-us .content #text-container img{
+    width: 140px;
+    height: 60px;
+    margin-top: 30px;
+}
+
+/*endregion*/
+
+/*region*/
+
+#popular .content{
+    flex-direction: column;
+}
+#popular .content #popular-title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#popular .content #popular-cards{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#popular .content #popular-cards .card{
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0px 2px 20px rgba(104, 104, 104, 0.349);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#popular .content #popular-cards .card .content{
+    justify-content: space-around;
+    width: 85%;
+    align-items: end;
+}
+#popular .content #popular-cards .card .content p, #popular .content #popular-cards .card .content h3{
+    width: 100%;
+}
+#popular .content #popular-cards .card .content h3{
+    color: black;
+}
+#popular .content #popular-cards .card .content i{
+    color: var(--consul-blue);
+}
+#popular .content #popular-cards .card:nth-child(2){
+    margin-top: 80px;
+}
+
+/*endregion*/
+
+/*region*/
+
+#user-comment{
+    width: 50%;
+    height: 70%;
+    background-color: var(--consul-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#user-comment .content{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+#user-comment .content img{
+    width: 80px;
+    height: 80px;
+}
+#user-comment .content h3, #user-comment .content p{
+    color: white;
+}
+#user-comment .content p{
+    text-align: center;
+}
+#comment-content{
+    width: 50%;
+    height: 70%;
+    background-color: var(--consul-gray);
+}
+
+/*endregion*/
+
+/*region*/
+
+footer{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .content{
+    flex-direction: column;
+}
+footer .content h3, footer .content #footer-header .logo p{
+    color: black;
+}
+footer .content i{
+    color: var(--consul-blue);
+    font-size: 30px;
+    cursor: pointer;
+}
+footer .content #footer-header{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .content #footer-header #footer-buttons .button-two{
+    background-color: var(--consul-blue);
+    color: white;
+    border: 4px solid white;
+}
+footer .content #footer-header #footer-buttons .button-two:hover{
+    background-color: white;
+    color: var(--consul-blue);
+    border: 4px solid var(--consul-blue);
+}
+footer .content #footer-body{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+footer .content #footer-body div{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    height: 80%;
+    width: 40%;
+}
+footer .content #footer-body div:nth-child(2){
+    width: 32%;
+}
+footer .content #footer-body div p{
+    font-size: 18px;
+    color: var(--consul-gray);
+    margin-top: 20px;
+}
+footer .content #footer-body div h3{
+    margin-top: 20px;
+}
+footer .content #footer-body div span{
+    margin-top: 20px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .content #footer-body #footer-query span{
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#footer-bar{
+    background-color: var(--consul-blue);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer-bar .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#footer-bar .content span{
+    width: 40px;
+    height: 40px;
+    background-color: var(--consul-blue);
+    border: 4px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#footer-bar .content span i{
+    font-size: 25px;
 }
 
 /*endregion*/
