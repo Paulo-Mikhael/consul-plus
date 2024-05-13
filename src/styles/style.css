@@ -23,7 +23,8 @@ p{
     font-size: 15px;
 }
 h1{
-    font-size: 60px;    
+    width: 90%;
+    font-size: 50px;    
 }
 h2{
     font-size: 16px;
@@ -37,7 +38,8 @@ button, h3{
     font-size: 20px;
     font-weight: bold;
 }
-nav .selected{
+nav .selected, p.selected{
+    cursor: pointer;
     color: var(--consul-blue) !important;
 }
 #services .selected{
@@ -181,12 +183,50 @@ header #header-two .content nav{
 }
 header #header-two .content nav h2{
     cursor: pointer;
+    transition: all .2s;
+
+    &:hover{
+        color: var(--consul-blue);
+    }
 }
 header #header-two .content nav h2 i{
     transition: all .2s;
 }
+header #header-two .content nav a:nth-child(3){
+    position: relative;
+}
 header #header-two .content nav a:nth-child(3):hover i{
+    color: var(--consul-blue);
     transform: rotate(180deg);
+}
+header #header-two .content nav a:nth-child(3):hover #services-box{
+    height: 190px;
+}
+header #header-two .content nav a:nth-child(3):hover #services-box p{
+    opacity: 100%;
+}
+header #header-two .content nav a:nth-child(3) #services-box p:hover{
+    background-color: var(--consul-gray);
+}
+header #header-two .content nav a:nth-child(3) #services-box{
+    background-color: var(--consul-blue);
+    transition: all .2s;
+    width: 230px;
+    height: 0px;
+    position: absolute;
+    left: -142px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+header #header-two .content nav a:nth-child(3) #services-box p{
+    opacity: 0%;
+    width: 100%;
+    height: 100%;
+    transition: all .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*endregion*/
@@ -212,9 +252,6 @@ main .content #main-message{
     justify-content: center;
     width: 60%;
     height: 100%;
-}
-main .content #main-message h1{
-    width: 60%;
 }
 main .content #main-message img{
     margin-bottom: 20px;
@@ -252,6 +289,10 @@ main .content #main-message button{
 }
 #nav-sidebar a{
     text-decoration: none;
+}
+#nav-sidebar img{
+    width: 30px;
+    height: 30px;
 }
 
 /*endregion*/
