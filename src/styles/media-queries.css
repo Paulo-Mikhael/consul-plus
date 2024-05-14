@@ -1,0 +1,97 @@
+@media screen and (max-width: 1200px){
+    #form-header{
+        width: 40%;
+    }
+    #form-header p{
+        width: 90%;
+        text-align: center;
+    }
+    #nav-sidebar img{
+        width: 25px;
+        height: 25px;
+    }
+    #main-screen-2 .content #form-content{
+        width: 40%;
+    }
+    #about-us .content #about-us-title{
+        margin-bottom: 20px;
+    }
+    #signature{
+        display: none;
+    }
+    #about-us .content #text-container p:last-child{
+        display: none;
+    }
+    #popular .content #popular-cards .card{
+        width: 280px;
+        height: 380px;
+    }
+    #footer-bar{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 1000px){
+    #services .content  #services-cards{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    #services .content  #services-cards .card{
+        width: 90%;
+        height: 60px;
+    }
+    #services .content  #services-cards img{
+        display: none;
+    }
+    #about-us .content #about-us-title{
+        height: 30%;
+    }
+    #about-us .content #text-container #text-content{
+        width: 100%;
+        height: 100%;
+    }
+    #about-us .content #text-container #text-images{
+        display: none;
+    }
+    #popular .content #popular-title{
+        margin-bottom: 20px;
+    }
+    #popular .content #popular-cards{
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    #popular .content #popular-cards .card{
+        width: 100%;
+        position: relative;
+    }
+    #popular .content #popular-cards .card:nth-child(2){
+        margin-top: 0px;
+    }
+    #popular .content #popular-cards .card .content{
+        width: 95%;
+        height: 90%;
+        gap: 3px;
+    }
+    #popular .content #popular-cards .card .content button{
+        position: absolute;
+        left: 71.5%;
+        top: 100px;
+    }
+    footer .content #footer-body #footer-services{
+        display: none;
+    }
+}
+@media screen and (max-width: 800px){
+    #header-one .content{
+        justify-content: right;
+    }
+    #header-first-message{
+        display: none;
+    }
+    #form-header{
+        width: 65%;
+    }
+    #form-header h3{
+        font-size: 16px;
+    }
+}
