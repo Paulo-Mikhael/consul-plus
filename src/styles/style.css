@@ -123,6 +123,9 @@ section h2{
     font-size: 20px;
     margin-left: 5px;
 }
+#header-two .content #mobile-menu{
+    display: none;
+}
 
 /*endregion*/
 
@@ -513,6 +516,9 @@ main .content #main-message button{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+#popular .content #popular-cards-mobile{
+    display: none;
 }
 #popular .content #popular-cards{
     width: 100%;

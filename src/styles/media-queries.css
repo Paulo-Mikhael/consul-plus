@@ -82,6 +82,9 @@
     }
 }
 @media screen and (max-width: 800px){
+    #nav-sidebar{
+        display: none;
+    }
     #header-one .content{
         justify-content: right;
     }
@@ -89,9 +92,178 @@
         display: none;
     }
     #form-header{
-        width: 65%;
+        display: none;
     }
-    #form-header h3{
-        font-size: 16px;
+    #form-content{
+        display: none;
+    }
+    #main-screen-2 .content #form-message{
+        width: 90%;
+    }
+    #popular .content #popular-cards{
+        display: none;
+    }
+    #popular .content #popular-cards-mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 90%;
+    }
+    #popular .content #popular-cards-mobile .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    #popular .content #popular-cards-mobile .content .mobile-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        gap: 15px;
+        width: 100%;
+        padding: 15px;
+        border-radius: 3px;
+        box-shadow: 0px 2px 20px rgba(104, 104, 104, 0.308);
+    }
+    #popular .content #popular-cards-mobile .content .mobile-card p{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    #popular .content #popular-cards-mobile .content .mobile-card i{
+        color: var(--consul-blue);
+    }
+    #services-message-container #services-message-image{
+        display: none;
+    }
+    #footer-bar .content{
+        justify-content: right;
+    }
+    #final-footer-message{
+        display: none;
+    }
+}
+@media screen and (max-width: 700px){
+    #user-comment{
+        width: 100%;
+    }
+    #comment-content{
+        display: none;
+    }
+    footer .content #footer-header{
+        justify-content: right;
+    }
+    footer .content #footer-header .logo{
+        display: none;
+    }
+    footer .content #footer-body #footer-about-us{
+        display: none;
+    }
+    footer .content #footer-body #footer-query{
+        width: 100%;
+        display: flex;
+        align-items: start;
+    }
+}
+@media screen and (max-width: 650px){
+    #header-two #header-nav{
+        display: none;
+    }
+    #header-two .content{
+        align-items: center;
+    }
+    #header-two .content #mobile-menu{
+        display: block;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #header-two .content #mobile-menu i{
+        font-size: 30px;
+        color: var(--consul-blue);
+    }
+    #header-two .content #mobile-menu i:hover{
+        color: var(--consul-gray);
+    }
+    main .content{
+        justify-content: center;
+        align-items: center;
+    }
+    main .content #main-message{
+        width: 90%;
+        height: 70%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+    main .content h1{
+        font-size: 40px;
+    }
+    main .content h3{
+        font-size: 15px;
+    }
+    #main-screen-2 .content{
+        align-items: center;
+        justify-content: center;
+    }
+    #main-screen-2 .content #form-message{
+        text-align: center;
+    }
+    #main-screen-2 .content #form-message #form-message-numbers{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    #separator{
+        display: none;
+    }
+    #services .content  #services-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #services-message-container #services-message-content{
+        text-align: center;
+    }
+    #services-message-container button{
+        display: none;
+    }
+    #about-us .content{
+        justify-content: start;
+    }
+    #about-us .content #about-us-title{
+        height: 70px;
+    }
+    #about-us .content #text-container h2{
+        text-align: center;
+        font-size: 30px;
+    }
+    #about-us .content #text-container p{
+        text-align: center;
+    }
+    #popular .content #popular-title{
+        text-align: center;
+    }
+    footer .content #footer-header{
+        margin-bottom: 50px;
+    }
+    footer .content #footer-header #footer-buttons{
+        gap: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    footer .content #footer-header #footer-buttons button{
+        width: 100%;
     }
 }
